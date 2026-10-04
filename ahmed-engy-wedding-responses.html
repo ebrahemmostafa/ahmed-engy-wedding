@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>ahmed-engy-wedding-responses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+    --olive: #4a5729;
+    --olive-deep: #3e4a22;
+    --olive-soft: #8e9a55;
+    --olive-10: rgba(74, 87, 41, .08);
+    --olive-20: rgba(74, 87, 41, .18);
+    --bg: #f7f8f2;
+    --surface: #ffffff;
+    --text: #2f3619;
+    --muted: #6f7656;
+    --danger: #9b3b2f;
+    --radius: 16px;
+    --serif: "Cormorant Garamond", "Amiri", Georgia, serif;
+    --sans: "Montserrat", "Amiri", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; min-height: 100%; }
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+button, input { font: inherit; }
+
+.hidden { display: none !important; }
+
+/* ---------- lock screen ---------- */
+.lock {
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    padding: 24px 16px;
+    background: var(--olive-deep);
+}
+
+.lock-card {
+    width: 100%;
+    max-width: 360px;
+    padding: 36px 28px 30px;
+    border-radius: var(--radius);
+    background: var(--surface);
+    text-align: center;
+    box-shadow: 0 24px 60px -30px rgba(0, 0, 0, .55);
+}
+
+.lock-kicker {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .32em;
+    text-transform: uppercase;
+    color: var(--olive-soft);
+}
+
+.lock-title {
+    margin: 8px 0 4px;
+    font-family: var(--serif);
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--olive);
+}
+
+.lock-sub {
+    margin: 0 0 24px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.code {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid var(--olive-20);
+    border-radius: 12px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 22px;
+    letter-spacing: .5em;
+    text-align: center;
+    outline: none;
+}
+
+.code:focus { border-color: var(--olive); box-shadow: 0 0 0 3px var(--olive-10); }
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border: 1px solid var(--olive);
+    border-radius: 999px;
+    background: var(--olive);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    cursor: pointer;
+    transition: background .15s ease, opacity .15s ease;
+}
+
+.btn:hover { background: var(--olive-deep); }
+.btn:disabled { opacity: .6; cursor: default; }
+.btn--block { width: 100%; margin-top: 14px; }
+
+.btn--ghost {
+    background: transparent;
+    color: var(--olive);
+    border-color: var(--olive-20);
+}
+
+.btn--ghost:hover { background: var(--olive-10); }
+
+.lock-error {
+    min-height: 22px;
+    margin: 12px 0 0;
+    color: var(--danger);
+    font-size: 13px;
+}
+
+/* ---------- dashboard ---------- */
+.top {
+    background: var(--olive-deep);
+    color: #fff;
+    padding: 28px 16px 72px;
+}
+
+.wrap {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.top-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.top .lock-kicker { color: rgba(255, 255, 255, .65); }
+
+.top h1 {
+    margin: 6px 0 0;
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.top .btn--ghost {
+    color: #fff;
+    border-color: rgba(255, 255, 255, .35);
+    padding: 9px 14px;
+    flex: none;
+}
+
+.top .btn--ghost:hover { background: rgba(255, 255, 255, .1); }
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: -48px;
+}
+
+.stat {
+    padding: 16px 14px;
+    border-radius: 14px;
+    background: var(--surface);
+    box-shadow: 0 10px 30px -20px rgba(47, 54, 25, .45);
+    text-align: center;
+}
+
+.stat b {
+    display: block;
+    font-family: var(--serif);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--olive);
+    font-variant-numeric: tabular-nums;
+}
+
+.stat span {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 22px 0 14px;
+}
+
+.tabs {
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 999px;
+    background: var(--olive-10);
+}
+
+.tab {
+    padding: 7px 14px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tab[aria-pressed="true"] { background: var(--surface); color: var(--olive); box-shadow: 0 2px 8px -4px rgba(0, 0, 0, .3); }
+
+.search {
+    flex: 1 1 180px;
+    min-width: 0;
+    padding: 10px 14px;
+    border: 1.5px solid var(--olive-20);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    outline: none;
+}
+
+.search:focus { border-color: var(--olive); }
+
+.tools-right { display: flex; gap: 8px; margin-inline-start: auto; }
+
+.tools-right .btn { padding: 9px 14px; }
+
+.list {
+    display: grid;
+    gap: 12px;
+    padding-bottom: 40px;
+}
+
+.card {
+    padding: 18px 18px 14px;
+    border: 1px solid var(--olive-20);
+    border-radius: var(--radius);
+    background: var(--surface);
+}
+
+.card-msg {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 20px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: var(--text);
+}
+
+.card-msg[dir="rtl"] { font-family: "Amiri", serif; font-size: 19px; line-height: 1.8; }
+
+.card-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.badge {
+    padding: 2px 9px;
+    border-radius: 999px;
+    background: var(--olive-10);
+    color: var(--olive);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .08em;
+}
+
+.empty {
+    padding: 48px 16px;
+    border: 1.5px dashed var(--olive-20);
+    border-radius: var(--radius);
+    text-align: center;
+    color: var(--muted);
+}
+
+.status {
+    min-height: 20px;
+    margin: 0 0 8px;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.status.is-error { color: var(--danger); }
+
+@media (max-width: 480px) {
+    .top h1 { font-size: 27px; }
+    .stat b { font-size: 26px; }
+    .tools-right { margin-inline-start: 0; width: 100%; }
+    .tools-right .btn { flex: 1; }
+}
+</style>
+</head>
+<body>
+
+<!-- Lock screen -->
+<main class="lock" id="lock">
+    <form class="lock-card" id="lockForm" autocomplete="off">
+        <p class="lock-kicker">Wedding responses</p>
+        <h1 class="lock-title">Ahmed &amp; Engy</h1>
+        <p class="lock-sub">Enter the passcode to see the guests' messages.</p>
+        <input class="code" id="code" type="password" inputmode="numeric" maxlength="12" placeholder="••••••" aria-label="Passcode" required>
+        <button class="btn btn--block" id="unlockBtn" type="submit">UNLOCK</button>
+        <p class="lock-error" id="lockError" role="alert"></p>
+    </form>
+</main>
+
+<!-- Dashboard -->
+<div class="hidden" id="app">
+    <header class="top">
+        <div class="wrap top-row">
+            <div>
+                <p class="lock-kicker">Wedding responses</p>
+                <h1>Ahmed &amp; Engy · 21.11.2026</h1>
+            </div>
+            <button class="btn btn--ghost" id="lockBtn" type="button">Lock</button>
+        </div>
+    </header>
+
+    <main class="wrap" style="padding: 0 16px;">
+        <section class="stats" aria-label="Totals">
+            <div class="stat"><b id="statAll">0</b><span>Messages</span></div>
+            <div class="stat"><b id="statEn">0</b><span>English site</span></div>
+            <div class="stat"><b id="statAr">0</b><span>Arabic site</span></div>
+        </section>
+
+        <div class="tools">
+            <div class="tabs" role="group" aria-label="Filter by site">
+                <button class="tab" type="button" data-filter="all" aria-pressed="true">All</button>
+                <button class="tab" type="button" data-filter="en" aria-pressed="false">English</button>
+                <button class="tab" type="button" data-filter="ar" aria-pressed="false">Arabic</button>
+            </div>
+            <input class="search" id="search" type="search" placeholder="Search messages…" aria-label="Search messages">
+            <div class="tools-right">
+                <button class="btn btn--ghost" id="refreshBtn" type="button">Refresh</button>
+                <button class="btn" id="csvBtn" type="button">Export CSV</button>
+            </div>
+        </div>
+
+        <p class="status" id="status" role="status"></p>
+        <section class="list" id="list" aria-live="polite"></section>
+    </main>
+</div>
+
+<script>
+(function () {
+    var SUPABASE_URL = "https://jcuqwcwkowtjxcykstlf.supabase.co";
+    var SUPABASE_ANON_KEY = "sb_publishable_BFtrH3u_sv9zat6B9SALyw_nS7Pajaa";
+    var RPC = "ahmed_engy_wedding_responses_list";
+    var STORE_KEY = "aew-responses-code";
+
+    var $ = function (id) { return document.getElementById(id); };
+    var rows = [];
+    var filter = "all";
+    var passcode = "";
+
+    var dateFmt = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "Africa/Cairo",
+        day: "numeric", month: "short", year: "numeric",
+        hour: "numeric", minute: "2-digit", hour12: true
+    });
+
+    function store(get, value) {
+        try {
+            if (get) return sessionStorage.getItem(STORE_KEY) || "";
+            if (value) sessionStorage.setItem(STORE_KEY, value); else sessionStorage.removeItem(STORE_KEY);
+        } catch (e) { return ""; }
+    }
+
+    function fetchRows(code) {
+        return fetch(SUPABASE_URL + "/rest/v1/rpc/" + RPC, {
+            method: "POST",
+            headers: {
+                "apikey": SUPABASE_ANON_KEY,
+                "Authorization": "Bearer " + SUPABASE_ANON_KEY,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ passcode: code })
+        }).then(function (res) {
+            return res.json().catch(function () { return null; }).then(function (body) {
+                if (res.ok) return body || [];
+                var err = new Error((body && body.message) || ("HTTP " + res.status));
+                err.badCode = body && (body.code === "28P01" || /invalid passcode/i.test(body.message || ""));
+                throw err;
+            });
+        });
+    }
+
+    function unlock(code) {
+        $("unlockBtn").disabled = true;
+        $("lockError").textContent = "";
+        return fetchRows(code).then(function (data) {
+            passcode = code;
+            store(false, code);
+            rows = data;
+            $("lock").classList.add("hidden");
+            $("app").classList.remove("hidden");
+            render();
+            setStatus("Updated " + dateFmt.format(new Date()));
+        }).catch(function (err) {
+            store(false, "");
+            $("lockError").textContent = err.badCode ? "Wrong passcode." : "Couldn't reach the server. Try again.";
+            $("code").select();
+        }).then(function () {
+            $("unlockBtn").disabled = false;
+        });
+    }
+
+    function refresh() {
+        $("refreshBtn").disabled = true;
+        setStatus("Refreshing…");
+        fetchRows(passcode).then(function (data) {
+            rows = data;
+            render();
+            setStatus("Updated " + dateFmt.format(new Date()));
+        }).catch(function () {
+            setStatus("Couldn't refresh. Check your connection and try again.", true);
+        }).then(function () {
+            $("refreshBtn").disabled = false;
+        });
+    }
+
+    function lock() {
+        passcode = "";
+        rows = [];
+        store(false, "");
+        $("list").textContent = "";
+        $("code").value = "";
+        $("app").classList.add("hidden");
+        $("lock").classList.remove("hidden");
+        $("code").focus();
+    }
+
+    function visibleRows() {
+        var q = $("search").value.trim().toLowerCase();
+        return rows.filter(function (r) {
+            if (filter !== "all" && r.site !== filter) return false;
+            return !q || String(r.message).toLowerCase().indexOf(q) !== -1;
+        });
+    }
+
+    // Messages are guest-written: always set them as text, never as HTML.
+    function render() {
+        $("statAll").textContent = rows.length;
+        $("statEn").textContent = rows.filter(function (r) { return r.site === "en"; }).length;
+        $("statAr").textContent = rows.filter(function (r) { return r.site === "ar"; }).length;
+
+        var list = $("list");
+        list.textContent = "";
+        var shown = visibleRows();
+
+        if (!shown.length) {
+            var empty = document.createElement("div");
+            empty.className = "empty";
+            empty.textContent = rows.length ? "No messages match this filter." : "No messages yet. They'll appear here as guests send them.";
+            list.appendChild(empty);
+            return;
+        }
+
+        shown.forEach(function (r) {
+            var card = document.createElement("article");
+            card.className = "card";
+
+            var msg = document.createElement("p");
+            msg.className = "card-msg";
+            msg.dir = /[؀-ۿ]/.test(r.message) ? "rtl" : "ltr";
+            msg.textContent = r.message;
+
+            var meta = document.createElement("div");
+            meta.className = "card-meta";
+            var badge = document.createElement("span");
+            badge.className = "badge";
+            badge.textContent = r.site === "ar" ? "ARABIC SITE" : "ENGLISH SITE";
+            var time = document.createElement("time");
+            time.dateTime = r.created_at;
+            time.textContent = dateFmt.format(new Date(r.created_at));
+            meta.appendChild(badge);
+            meta.appendChild(time);
+
+            card.appendChild(msg);
+            card.appendChild(meta);
+            list.appendChild(card);
+        });
+    }
+
+    function setStatus(text, isError) {
+        $("status").textContent = text;
+        $("status").classList.toggle("is-error", !!isError);
+    }
+
+    function exportCsv() {
+        var esc = function (v) { return '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"'; };
+        var lines = [["sent_at_cairo", "site", "message"].join(",")];
+        visibleRows().forEach(function (r) {
+            lines.push([esc(dateFmt.format(new Date(r.created_at))), esc(r.site), esc(r.message)].join(","));
+        });
+        // BOM so Excel opens Arabic text correctly
+        var blob = new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
+        var a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "ahmed-engy-wedding-responses.csv";
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 0);
+    }
+
+    $("lockForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        var code = $("code").value.trim();
+        if (code) unlock(code);
+    });
+    $("lockBtn").addEventListener("click", lock);
+    $("refreshBtn").addEventListener("click", refresh);
+    $("csvBtn").addEventListener("click", exportCsv);
+    $("search").addEventListener("input", render);
+    document.querySelectorAll(".tab").forEach(function (tab) {
+        tab.addEventListener("click", function () {
+            filter = tab.dataset.filter;
+            document.querySelectorAll(".tab").forEach(function (t) {
+                t.setAttribute("aria-pressed", String(t === tab));
+            });
+            render();
+        });
+    });
+
+    var saved = store(true);
+    if (saved) unlock(saved); else $("code").focus();
+})();
+</script>
+</body>
+</html>

@@ -43,3 +43,10 @@ Arabic (RTL) version of the Ahmed & Engy invitation (English version: https://gi
 
 - Page is `lang="ar" dir="rtl"`; all text translated to Arabic
 - `css/arabic.css` maps the Latin display fonts to Arabic ones for Arabic letters only (Amiri for headings/body, Diwani for the hero names and title, Aref Ruqaa for decorative lines), removes letter-spacing that breaks joined letters, and forces RTL text direction inside blocks the template sets to LTR
+
+## Guest Messages (Supabase)
+
+- The RSVP form on **both** sites (this one and the English one, https://github.com/ebrahemmostafa/leila-wedding) sends each message to the Supabase table `ahmed_engy_wedding_responses` via `js/rsvp-supabase.js`, tagged `ar` or `en`.
+- `ahmed-engy-wedding-responses.html` shows all messages from both sites behind a passcode. The passcode is checked inside Supabase (`ahmed_engy_wedding_responses_list` function), so it isn't in the page's code. It has totals, an English/Arabic filter, search and CSV export.
+- Guests can only add messages; the public key can't read, edit or delete them.
+- Database setup: run `supabase/setup.sql` once in the Supabase SQL Editor. It only creates objects named `ahmed_engy_wedding_*`. To change the passcode, edit it there and re-run the `create or replace function …` part.
