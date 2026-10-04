@@ -29,7 +29,7 @@
 - All external URLs replaced with local file references
 - CSS and JS beautified for readability
 - Font URLs in google-fonts.css point to local woff2 files
-- Background music: lail-wasmah-wnujumah-wqmarh.mp3
+- Background music: assets/audio/background-music.mp3
 
 ## Color Theme — White & Olive
 
