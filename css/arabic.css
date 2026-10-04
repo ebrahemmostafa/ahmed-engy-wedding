@@ -1,0 +1,108 @@
+/* Arabic version — typography overrides.
+   The template's Latin display fonts have no Arabic glyphs, so each one gets
+   extra @font-face rules limited to the Arabic unicode-range (one per weight,
+   matching the template's own rules). Arabic letters inside any element using
+   these families render in Amiri, while digits and Latin keep the original. */
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:300;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:700;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:300;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:500;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:600;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Playfair Display';font-style:italic;font-weight:700;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Gelasio';font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Gelasio';font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Gelasio';font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Gelasio';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Gelasio';font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Gelasio';font-style:italic;font-weight:300;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Gelasio';font-style:italic;font-weight:400;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Gelasio';font-style:italic;font-weight:500;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Gelasio';font-style:italic;font-weight:600;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Gelasio';font-style:italic;font-weight:700;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Marcellus';font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Marcellus';font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Marcellus';font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Marcellus';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Marcellus';font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Marcellus';font-style:italic;font-weight:300;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Marcellus';font-style:italic;font-weight:400;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Marcellus';font-style:italic;font-weight:500;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Marcellus';font-style:italic;font-weight:600;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Marcellus';font-style:italic;font-weight:700;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:300;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:400;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:500;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:600;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:700;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Montserrat';font-style:italic;font-weight:300;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Montserrat';font-style:italic;font-weight:400;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Montserrat';font-style:italic;font-weight:500;font-display:swap;src:url(../assets/fonts/J7aRnpd8CGxBHpUrtLMA7w.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Montserrat';font-style:italic;font-weight:600;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+@font-face{font-family:'Montserrat';font-style:italic;font-weight:700;font-display:swap;src:url(../assets/fonts/J7acnpd8CGxBHp2VkaY6zp5yGw.woff2) format('woff2');unicode-range:U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFC}
+
+/* Letter-spacing pulls joined Arabic letters apart. */
+.lb-doc,
+.lb-doc *,
+.lb-intro-play {
+    letter-spacing: 0 !important;
+}
+
+/* Hero names and title in Diwani calligraphy (the date stays in the script font). */
+#video-1uif1c [data-section-text-index="0"],
+#video-1uif1c [data-section-text-index="1"],
+#video-1uif1c [data-section-text-index="2"],
+#video-1uif1c [data-section-text-index="3"] {
+    font-family: "DIWANY", serif !important;
+}
+
+/* Big decorative lines in Ruqaa instead of the plain serif. */
+#text-mztyzk .farha-story-fixed-script,
+#text-sjth7s .farha-palace-countdown-ido {
+    font-family: "Aref Ruqaa", serif !important;
+    font-style: normal !important;
+}
+
+/* Section headings relied on wide letter-spacing for presence; without it
+   they need a larger size. */
+.farha-story-fixed-title,
+.farha-date-palace-v2-kicker,
+.farha-palace-countdown-title,
+.farha-palace-timeline-title,
+.farha-palace-location-title,
+.farha-palace-thanks-title {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+
+/* Diwani reads smaller than the Latin script at the same size. */
+#video-1uif1c [data-section-text-index="0"],
+#video-1uif1c [data-section-text-index="1"],
+#video-1uif1c [data-section-text-index="2"] {
+    font-size: clamp(66px, 17.5cqw, 128px) !important;
+}
+
+/* Several template blocks force direction:ltr (timeline, location, thanks).
+   Keep their layout containers as they are, but lay out the text itself
+   right-to-left so punctuation and "21 نوفمبر 2026" read in the right order. */
+.lb-doc span,
+.lb-doc p,
+.lb-doc h2,
+.lb-doc label,
+.lb-doc button,
+.lb-doc a {
+    direction: rtl !important;
+}

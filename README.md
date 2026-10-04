@@ -1,4 +1,6 @@
-# Lail - Wedding Invitation Template
+# حفل زفاف أحمد و إنجي — Arabic Wedding Invitation
+
+Arabic (RTL) version of the Ahmed & Engy invitation (English version: https://github.com/ebrahemmostafa/leila-wedding).
 
 **Source:** https://www.farha-invitations.com/templates/lail/preview/
 
@@ -36,3 +38,8 @@
 - Envelope intro video and poster recolored from royal blue to olive (`goldleaf-olive-open.*`); the gold leaf seal is unchanged
 - Navy sections → deep olive, cream sections → white, gold/navy accents → olive tones
 - Hero titles are white with a soft olive shadow so they read over both the day and night frames of the hero video
+
+## Arabic Version
+
+- Page is `lang="ar" dir="rtl"`; all text translated to Arabic
+- `css/arabic.css` maps the Latin display fonts to Arabic ones for Arabic letters only (Amiri for headings/body, Diwani for the hero names and title, Aref Ruqaa for decorative lines), removes letter-spacing that breaks joined letters, and forces RTL text direction inside blocks the template sets to LTR
