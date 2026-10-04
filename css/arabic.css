@@ -106,3 +106,9 @@
 .lb-doc a {
     direction: rtl !important;
 }
+
+/* Hero date uses Arabic-Indic digits, which the Latin script font lacks. */
+#video-1uif1c [data-section-text-index="4"] {
+    font-family: "Amiri", serif !important;
+    font-weight: 700 !important;
+}
